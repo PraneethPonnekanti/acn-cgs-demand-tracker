@@ -1,7 +1,6 @@
 pip
 streamlit
 pandas
-base64
 io
 time
 scikit-learn
