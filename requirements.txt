@@ -13,3 +13,4 @@ xgboost
 numpy
 pygithub
 nltk
+openpyxl
