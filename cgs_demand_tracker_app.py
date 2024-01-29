@@ -257,8 +257,12 @@ def upload_and_process_data():
         uploaded_fn = uploaded_file.name + '.xlsx'
         repo_name = 'PraneethPonnekanti/acn-cgs-demand-tracker'
         #Upload the file to github.
-        upload_to_github(uploaded_fn,'./Input Files/', repo_name, uploaded_file)
-        
+        try :
+            upload_to_github(uploaded_fn,'./Input Files/', repo_name, uploaded_file)
+        except Exception as e :
+            st.error(f"Error: {e}")
+            st.warning ("Invalid Github token. User input file not uploaded to Github. \n Proceeding to next steps.")
+            
         sheets = pd.ExcelFile(uploaded_file).sheet_names
         selected_sheet = st.selectbox("Select Demand Sheet", sheets)
 
