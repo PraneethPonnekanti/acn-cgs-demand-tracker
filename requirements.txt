@@ -11,5 +11,5 @@ transformers
 lightgbm
 xgboost
 numpy
-github
+pygithub
 nltk
