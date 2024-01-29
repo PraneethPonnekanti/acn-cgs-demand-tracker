@@ -1,9 +1,9 @@
-pip
-streamlit
-pandas
+base64
+io
+time
 scikit-learn
-joblib
 tqdm
+joblib
 tensorflow
 tensorflow-hub
 sentence-transformers
@@ -11,3 +11,5 @@ transformers
 lightgbm
 xgboost
 numpy
+github
+nltk
