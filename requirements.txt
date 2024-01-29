@@ -1,7 +1,6 @@
 pip
 streamlit
 pandas
-io
 time
 scikit-learn
 tqdm
