@@ -164,7 +164,7 @@ def read_text_file(file_path):
     """
     with open(file_path, 'r') as file:
         file_contents = file.read()
-    return file_contents
+    return file_contents.strip()
 
 def save_model_info_to_github(model_info, classifier_name, embedding_name, repository):
     try:
