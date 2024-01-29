@@ -1,7 +1,6 @@
 pip
 streamlit
 pandas
-time
 scikit-learn
 tqdm
 joblib
