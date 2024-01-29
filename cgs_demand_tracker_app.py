@@ -593,13 +593,13 @@ def main():
         um_rt, um_ue = st.columns(2)
         
         if um_rt.button ("Yes, I wish to re-train the models."):
-            inp_data = pd.read_excel(r"C:\Users\praneeth.ponnekanti\OneDrive - Accenture\cgs_demand_tracker_pr_v2.xlsx")
+            inp_data = pd.read_excel("cgs_demand_tracker_pr_v2.xlsx")
             retrain_models(inp_data)
         if um_ue.button("No, I wish to use the latest trained model.") :
-            inp_data = pd.read_excel(r"C:\Users\praneeth.ponnekanti\OneDrive - Accenture\cgs_demand_tracker_pr_v2.xlsx")
+            inp_data = pd.read_excel("cgs_demand_tracker_pr_v2.xlsx")
             predict_using_models(inp_data)
     elif option == "Predict Using Trained Models & Download Results":
-        inp_data = pd.read_excel(r"C:\Users\praneeth.ponnekanti\OneDrive - Accenture\cgs_demand_tracker_pr_v2.xlsx")
+        inp_data = pd.read_excel("cgs_demand_tracker_pr_v2.xlsx")
         op_df = predict_using_models(inp_data)
         col1,col2,col3 = st.columns(3)
         if col2.button("Download link for output predictions workbook."):
