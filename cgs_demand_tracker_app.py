@@ -243,7 +243,7 @@ def upload_to_github(filename, target_folder, repo_name, uploaded_file = None):
             st.success(f"File '{filename}' uploaded successfully to '{upload_path}'.")
         except Exception as e:
             st.error(f"Error: {e}")
-        st.write ("User input file saved to Github.")
+            st.write ("User input file couldn't be saved to Github.")
     else :
         st.write ("No user input file observed. Other Processed files were saved to Github.")
         
