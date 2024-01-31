@@ -281,6 +281,8 @@ def upload_and_process_data():
             st.write (algo_data.head(10))
             # You can continue with additional functionalities as needed
             col1,col2,col3 = st.columns(3)
+            ### Edited for Github
+            algo_data.to_excel("./Processed Files/CGS_Demand_Tracker_Processed.xlsx')
             if col2.button("Download results to proceed further"):
                 download_table(algo_data, "CGS_Demand_Tracker_Processed.xlsx")
             return algo_data
