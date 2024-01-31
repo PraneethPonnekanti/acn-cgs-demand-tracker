@@ -31,10 +31,10 @@ import glob
 import os
 import nltk
 from nltk.tokenize import word_tokenize
-from transformers import XLNetTokenizer, XLNetModel
+#from transformers import XLNetTokenizer, XLNetModel
 
-if not nltk.data.find('tokenizers/punkt'):
-    nltk.download('punkt')
+#if not nltk.data.find('tokenizers/punkt'):
+#    nltk.download('punkt')
 
 
 #################################################################
