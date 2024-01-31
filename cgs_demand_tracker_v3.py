@@ -99,7 +99,7 @@ def download_table(df, op_file):
     return
 
 
-def download_table(df, op_file):
+def download_table_old(df, op_file):
     """
     Generates a link allowing the data in a given panda dataframe to be downloaded
     in:  dataframe
@@ -286,15 +286,6 @@ def upload_and_process_data():
             return algo_data
           
 #---------------------------------------------------------------------------------------------------------------------------------------------------
-
-def get_xlnet_embedding(text):
-    # Load XLNet tokenizer and model
-    tokenizer_xlnet = XLNetTokenizer.from_pretrained('xlnet-base-cased')
-    model_xlnet = XLNetModel.from_pretrained('xlnet-base-cased')
-    inputs = tokenizer_xlnet(text, return_tensors="pt", truncation=True, padding=True)
-    outputs = model_xlnet(**inputs)
-    embeddings = outputs.last_hidden_state.mean(dim=1).detach().numpy()
-    return embeddings
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------
 def retrain_models(inp_data):
