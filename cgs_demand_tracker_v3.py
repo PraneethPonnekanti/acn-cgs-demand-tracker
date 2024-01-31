@@ -521,9 +521,7 @@ def main():
     elif option == "Predict & Map Capabilities to Opportunities":
         inp_data = pd.read_excel(r"C:\Users\praneeth.ponnekanti\Downloads\CGS_Demand_Tracker_Processed.xlsx")
         op_df = predict_using_models(inp_data)
-        col1,col2,col3 = st.columns(3)
-        if col2.button("Download output predictions workbook."):
-            download_table(op_df,'cgs_demand_tracker_app.xlsx')
+        download_table(op_df,'cgs_demand_tracker_app.xlsx')
         
 
 if __name__ == "__main__":
