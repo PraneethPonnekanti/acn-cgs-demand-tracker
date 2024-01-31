@@ -33,7 +33,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 #from transformers import XLNetTokenizer, XLNetModel
 
-! nltk.download('punkt')
+nltk.download('punkt')
 
 
 #################################################################
